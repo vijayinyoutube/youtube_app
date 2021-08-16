@@ -36,7 +36,7 @@
 ## App
 
 
-Live Demo 👉 : 
+Live Demo 👉 : https://vijayinyoutube.github.io/youtube_app/
   
 Check out the video tutorial 👉 : 
 
