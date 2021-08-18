@@ -57,20 +57,16 @@ class _SideMenuState extends State<SideMenu> {
           },
           child: Container(
             color: isSelectedIndex == index ? kaccentColor : Colors.transparent,
-            child: !ResponsiveLayoutClass.isDesktop(context)
-                ? sideMenuItems[index].icons
-                : Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: kPadding * 2.5),
-                    child: ListTile(
-                      leading: sideMenuItems[index].icons,
-                      title: Text(
-                        sideMenuItems[index].title,
-                        style: const TextStyle(
-                            color: Colors.white, fontSize: 15.00),
-                      ),
-                    ),
-                  ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: kPadding * 2.5),
+              child: ListTile(
+                leading: sideMenuItems[index].icons,
+                title: Text(
+                  sideMenuItems[index].title,
+                  style: const TextStyle(color: Colors.white, fontSize: 15.00),
+                ),
+              ),
+            ),
           ),
         ),
       );
